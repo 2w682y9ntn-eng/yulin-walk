@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f8f2e8">
+  <meta name="description" content="成都玉林—芳草街的 Citywalk 行前规划。按兴趣探索资源地图，整理自己的漫游清单。">
+  <title>玉林漫游 · YULIN WALK</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/tailwind.js"></script>
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/photos.js"></script>
+  <script defer src="routing.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">跳到主要内容</a>
+  <header class="site-header">
+    <div class="shell header-inner flex items-center justify-between">
+      <a class="brand flex items-center" href="#home" aria-label="玉林漫游首页">
+        <span class="brand-icon" aria-hidden="true">巷</span>
+        <span><strong>玉林漫游</strong><small>YULIN WALK</small></span>
+      </a>
+      <nav class="navigation flex items-center" aria-label="主导航">
+        <a href="#home" data-nav="home">发现玉林</a>
+        <a href="#filter" data-nav="filter">自由探索</a>
+        <a href="#routes" data-nav="routes">主题路线</a>
+        <a href="#map" data-nav="map">资源地图</a>
+      </nav>
+      <a class="plan-link flex items-center" href="#plan" data-nav="plan"><span>我的计划</span><span id="count">0</span></a>
+    </div>
+  </header>
+  <main class="shell" id="content" tabindex="-1"></main>
+  <footer class="shell">
+    <div class="footer-inner flex items-center justify-between">
+      <a class="footer-brand" href="#home">玉林漫游 <small>YULIN WALK</small></a>
+      <span>成都 · 玉林—芳草街</span>
+      <a href="#about">数据与素材说明</a>
+    </div>
+  </footer>
+  <dialog id="stop-dialog" aria-label="地点详情">
+    <form method="dialog"><button class="btn small" type="submit" aria-label="关闭地点详情">关闭 ✕</button></form>
+    <div id="stop-dialog-content" class="map-detail"></div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>请开启 JavaScript 以使用筛选、地图与漫游计划。</noscript>
+</body>
+</html>
+
